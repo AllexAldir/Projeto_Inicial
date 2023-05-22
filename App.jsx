@@ -23,7 +23,7 @@ export default function AppPrincipal() {
     <View style={estilos.home}>
       <View>
         <Text style={estilos.txt}>Cursos Disponiveis</Text>
-        <Comp01 curso="JS" nota="10" cor='magenta'/>
+        <Comp01 curso="JS" nota="10"/>
         {/* Passando valores para as props */}
       </View>
       <View>
@@ -40,6 +40,7 @@ export default function AppPrincipal() {
 
 const estilos = StyleSheet.create({
   home: {
+    backgroundColor: '#00000',
     display: 'flex',
     justifyContent: 'center',
     borderColor: 'black',
