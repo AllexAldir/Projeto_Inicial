@@ -1,7 +1,7 @@
 //import { Component } from 'react';
 import { Text, View } from 'react-native';// componentes principais
 import { StyleSheet } from 'react-native';
-import Comp01  from './components/comp1.jsx'; //Importação do componente
+import Comp01 from './components/comp1.jsx'; //Importação do componente
 /*
 //Utilizando componentes de classes:
 export default class AppPrincipal extends Component {
@@ -20,9 +20,9 @@ export default class AppPrincipal extends Component {
 
 export default function AppPrincipal() {
   return (
-    <View style={styles.container}>
+    <View style={estilos.home}>
       <View>
-        <Text>Teste Visivel</Text>
+        <Text style={estilos.txt}>Teste Visivel</Text>
       </View>
       <View>
         <Text>Teste Visivel2</Text>
@@ -31,17 +31,24 @@ export default function AppPrincipal() {
     </View>
 
 
-    
+
     //Associa para a minha classe(style)
   );
 }
 
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+const estilos = StyleSheet.create({
+  home: {
+    display: 'flex',
     justifyContent: 'center',
+    borderColor: 'black',
+    borderStyle: 'solid',
+    borderWidth: 4,
+    alignItems: 'center',
+    flex: 1 //coloca centralizado
+
   },
-});
+  txt: {
+    color: 'red',
+    fontSize: 45
+  }
+})
