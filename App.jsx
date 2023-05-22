@@ -22,12 +22,14 @@ export default function AppPrincipal() {
   return (
     <View style={estilos.home}>
       <View>
-        <Text style={estilos.txt}>Teste Visivel</Text>
+        <Text style={estilos.txt}>Cursos Disponiveis</Text>
+        <Comp01 curso="JS" nota="10" cor='magenta'/>
+        {/* Passando valores para as props */}
       </View>
       <View>
-        <Text>Teste Visivel2</Text>
+        <Text style={{ color: 'green', fontSize: 40 }}>Cursos Disponiveis</Text>
+        <Comp01 curso="Type" />
       </View>
-      <Comp01 />
     </View>
 
 
